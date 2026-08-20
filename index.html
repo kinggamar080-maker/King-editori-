@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KING EDITORI — Photography</title>
+  <meta name="description" content="KING EDITORI — a dark, cinematic photography portfolio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">KING <span>EDITORI</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PHOTOGRAPHY • VISUAL STORIES</p>
+        <h1>Frames that<br><em>feel alive.</em></h1>
+        <p class="intro">A cinematic photography portfolio by KING EDITORI.</p>
+        <a class="button" href="#work">Explore the work <span>↓</span></a>
+      </div>
+      <div class="hero-card">
+        <img src="images/hero.jpg" alt="Featured photography" onerror="this.src='images/photo-1.jpg'">
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Photography</h2>
+        </div>
+        <p class="muted">Replace the images in <strong>images/</strong> to make this gallery yours.</p>
+      </div>
+
+      <div class="filters" aria-label="Gallery filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="portrait">Portrait</button>
+        <button class="filter" data-filter="street">Street</button>
+        <button class="filter" data-filter="nature">Nature</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <figure class="photo tall" data-category="portrait">
+          <img src="images/photo-1.jpg" alt="Portrait photography">
+          <figcaption><span>01</span> Portrait</figcaption>
+        </figure>
+        <figure class="photo wide" data-category="street">
+          <img src="images/photo-2.jpg" alt="Street photography">
+          <figcaption><span>02</span> Street</figcaption>
+        </figure>
+        <figure class="photo" data-category="nature">
+          <img src="images/photo-3.jpg" alt="Nature photography">
+          <figcaption><span>03</span> Nature</figcaption>
+        </figure>
+        <figure class="photo" data-category="portrait">
+          <img src="images/photo-4.jpg" alt="Portrait photography">
+          <figcaption><span>04</span> Portrait</figcaption>
+        </figure>
+        <figure class="photo" data-category="street">
+          <img src="images/photo-5.jpg" alt="Street photography">
+          <figcaption><span>05</span> Street</figcaption>
+        </figure>
+        <figure class="photo tall" data-category="nature">
+          <img src="images/photo-6.jpg" alt="Nature photography">
+          <figcaption><span>06</span> Nature</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div>
+        <p class="eyebrow">THE STORY</p>
+        <h2>Quiet moments.<br><em>Bold frames.</em></h2>
+      </div>
+      <div class="about-copy">
+        <p>KING EDITORI is a visual space for photography that captures atmosphere, personality and honest moments.</p>
+        <p class="muted">Edit this text directly in <strong>index.html</strong>. No complicated setup required.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">LET'S CREATE</p>
+      <h2>Have a story to frame?</h2>
+      <a class="contact-link" href="mailto:hello@example.com">hello@example.com ↗</a>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 KING EDITORI</span>
+    <span>Photography portfolio</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="closeLightbox" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
